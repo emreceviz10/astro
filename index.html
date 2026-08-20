@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- viewport-fit=cover so the safe-area insets in global.css do something
+         on a notched device; user-scalable stays on for accessibility. -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Astro</title>
+    <!-- 🔴 NO NAMES IN SHIPPED STRINGS (D-37). This is one of only two places
+         anything personal could reach the public build; the other is the
+         sourcemap, which is now off. Comments like this one are stripped by
+         minification and never ship. -->
+    <meta name="description" content="Robotu programla, bütün ışıkları yak." />
+    <meta name="theme-color" content="#b39b79" />
+    <link rel="manifest" href="/astro/manifest.webmanifest" />
+    <!-- D-15: the home-screen install IS the persistence strategy, not polish.
+         iOS Safari deletes script-writable storage after seven days of browser
+         use without a visit; a home-screen app is exempt, and it loses the
+         address bar, which is most of what makes this feel like a game. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Astro" />
+    <link rel="apple-touch-icon" href="/astro/icon-180.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/astro/icon-512.png" />
+    <script type="module" crossorigin src="/astro/assets/index-DJOuDP7s.js"></script>
+    <link rel="stylesheet" crossorigin href="/astro/assets/index-aoY12Riu.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
