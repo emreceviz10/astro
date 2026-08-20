@@ -6,10 +6,12 @@
          on a notched device; user-scalable stays on for accessibility. -->
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
     <title>Astro</title>
-    <!-- 🔴 NO NAMES IN SHIPPED STRINGS (D-37). This is one of only two places
-         anything personal could reach the public build; the other is the
-         sourcemap, which is now off. Comments like this one are stripped by
-         minification and never ship. -->
+    <!-- 🔴 NOTHING PERSONAL IN THIS FILE — INCLUDING THESE COMMENTS (D-37).
+         Vite strips comments from JS and CSS but NOT from index.html: every
+         comment here ships verbatim to a public URL. The description below
+         used to carry a child's name. `scripts/publish.sh` greps the BUILT
+         index.html and refuses to publish if it finds one, which is how this
+         rule stays true — it caught two drafts of this very comment. -->
     <meta name="description" content="Robotu programla, bütün ışıkları yak." />
     <meta name="theme-color" content="#b39b79" />
     <link rel="manifest" href="/astro/manifest.webmanifest" />
